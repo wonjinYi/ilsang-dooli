@@ -1,0 +1,67 @@
+#route-auth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* image & desc */
+#route-auth img {
+  width: 192px;
+  height: auto;
+}
+
+#route-auth #login-needed {
+  margin: 32px;
+}
+
+/* input */
+#route-auth form input {
+  display: block;
+
+  padding: 8px;
+  margin-top: 8px;
+
+  width: 350px;
+  max-width: 90vw;
+
+  font-size: 16px;
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 8px;
+
+  transition: 0.3s background-color ease;
+}
+
+#route-auth form input:focus {
+  outline: none;
+  background-color: rgb(248, 248, 248);
+}
+
+/* button */
+#route-auth button {
+  display: block;
+
+  margin-top: 8px;
+  padding: 8px;
+
+  width: 350px;
+  max-width: 90vw;
+
+  font-size: 16px;
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+
+  transition: 0.3s background-color, color ease;
+}
+
+#route-auth button:hover {
+  background-color: rgb(107, 190, 114);
+  color: white;
+}
+
+#route-auth #problem-teller {
+  color: red;
+  font-weight: bolder;
+  margin: 12px 0;
+}

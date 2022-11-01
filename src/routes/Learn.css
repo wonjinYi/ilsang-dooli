@@ -1,0 +1,48 @@
+#route-learn {
+  justify-content: flex-start;
+}
+
+#route-learn #type-title {
+  font-size: 64px;
+  font-family: "Gowun Batang", "Noto Sans KR";
+}
+
+#route-learn #type-desc {
+  font-size: 16px;
+  margin: 16px 0;
+}
+
+#route-learn #item-grid {
+  display: flex;
+
+  flex-wrap: wrap;
+}
+
+#route-learn .item-title {
+  font-size: 20px;
+}
+
+/* copy of Square Item */
+#new-article {
+  max-width: 256px;
+  text-align: center;
+  margin: 16px;
+
+  transition: all 0.3s ease-out;
+}
+
+#new-article:hover {
+  transform: translateY(-8px);
+  cursor: pointer;
+}
+#new-article .img-wrap {
+  width: 256px;
+  height: 256px;
+
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid grey;
+  border-radius: 16px;
+}

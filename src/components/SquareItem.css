@@ -1,0 +1,35 @@
+/* item-level */
+#square-item {
+  max-width: 256px;
+  text-align: center;
+  margin: 16px;
+
+  transition: all 0.3s ease-out;
+}
+
+#square-item:hover {
+  transform: translateY(-8px);
+  cursor: pointer;
+}
+#square-item .img-wrap {
+  width: 256px;
+  height: 256px;
+
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid grey;
+  border-radius: 16px;
+}
+
+#square-item .item-title {
+  font-size: 20px;
+  word-wrap: break-word;
+}
+
+#square-item img {
+  width: 200px;
+  height: 200px;
+  object-fit: scale-down;
+}

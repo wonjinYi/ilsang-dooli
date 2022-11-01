@@ -1,0 +1,71 @@
+#route-main {
+}
+
+#route-main #intro {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#route-main #intro img {
+  margin: -32px;
+  margin-top: calc(-72px - 32px);
+  margin-bottom: 64px;
+  width: 100vw;
+}
+#route-main #intro #intro-txt {
+  text-align: center;
+
+  position: absolute;
+
+  top: 20%;
+}
+#route-main #intro #intro-txt h3 {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 18px 12px;
+  border-radius: 8px;
+  color: white;
+  font-size: 32px;
+  font-family: "Gowun Batang", "Noto Sans KR";
+}
+
+#route-main #intro #intro-txt p {
+  font-size: 32px;
+  font-family: "Gowun Batang", "Noto Sans KR";
+}
+
+/* container-level */
+#route-main .group-container {
+  margin: 32px 0;
+  /* padding : 16px 0; */
+}
+
+#route-main .group-title {
+  margin-bottom: 8px;
+  font-size: 32px;
+  font-family: "Gowun Batang", "Noto Sans KR";
+}
+
+#router-main .group-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#route-main .expand {
+  padding: 8px;
+  background-color: rgb(107, 190, 114);
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  #route-main #intro #intro-txt h3 {
+    padding: 14px 8px;
+    color: white;
+    font-size: 14px;
+    font-family: "Gowun Batang", "Noto Sans KR";
+  }
+  #route-main #intro #intro-txt p {
+    font-size: 13px;
+  }
+}

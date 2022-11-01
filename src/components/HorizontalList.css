@@ -1,0 +1,48 @@
+#horizontal-list {
+  position: relative;
+  /* display: flex;
+    align-items: center; */
+}
+#horizontal-list .item-container {
+  display: flex;
+  padding: 16px;
+  /* overflow-x: hidden; */
+}
+
+/* scroll button */
+#horizontal-list .left-scroll {
+  left: 0px;
+}
+#horizontal-list .right-scroll {
+  right: 0px;
+}
+#horizontal-list .scroll {
+  position: absolute;
+  top: 128px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  border: 2px solid rgba(190, 190, 190, 0);
+  border-radius: 50%;
+
+  background-color: rgba(0, 0, 0, 0.1);
+
+  transition: 0.5s all ease;
+  cursor: pointer;
+}
+
+#horizontal-list .scroll:hover {
+  border: 2px solid rgba(190, 190, 190, 1);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#horizontal-list .scroll:active {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#horizontal-list .scroll img {
+  width: 32px;
+  height: auto;
+}

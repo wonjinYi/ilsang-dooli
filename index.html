@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=0"
+    />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta
+      content="minimum-scale=1.0, width=device-width, maximum-scale=1, 
+user-scalable=no"
+      name="viewport"
+    />
+    <link rel="shortcut icon" href="./src/images/favicon.ico" type="image/x-icon" />
+    <!-- 전역 스타일 -->
+    <link rel="stylesheet" type="text/css" href="./src/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./src/global.css" />
+    <!-- 컴포넌트와 라우트들의 개별 스타일링의 묶음 -->
+    <link rel="stylesheet" type="text/css" href="./src/routeStyles.css" />
+    <link rel="stylesheet" href="./src/componentStyles.css" />
+
+    <title>일상두리</title>
+  </head>
+  <body>
+    <!-- Root Component (div#app) -->
+    <div id="app">
+      <app-header :hasuserdata="hasuserdata"></app-header>
+      <router-view
+        v-on:login-success="setUserdata"
+        v-on:logout-success="resetUserdata"
+        v-on:start-loading="showLoadingOverlay"
+        v-on:finish-loading="hideLoadingOverlay"
+        v-on:start-writing="showArticleWriter"
+        v-on:finish-writing="hideArticleWriter"
+        v-on:open-viewer="showArticleViewer"
+        v-on:close-viewer="hideArticleViewer"
+        v-on:refresh-articles="refreshArticles"
+        :email="email"
+        :user="user"
+        :articles="articles"
+        :articles_habit="articles.habit"
+        :articles_challenge="articles.challenge"
+        :articles_learn="articles.learn"
+      ></router-view>
+      <app-footer></app-footer>
+      <article-writer
+        v-if="writing"
+        v-on:finish-writing="hideArticleWriter"
+        v-on:start-loading="showLoadingOverlay"
+        v-on:finish-loading="hideLoadingOverlay"
+        :type="writingCause"
+        :email="email"
+      ></article-writer>
+      <article-viewer
+        v-if="viewing"
+        v-on:close-viewer="hideArticleViewer"
+        :iteminfo="viewerContent"
+      ></article-viewer>
+      <loading-overlay v-if="loading"></loading-overlay>
+    </div>
+  </body>
+
+  <!-- firebase SDK v8-->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-remote-config.js"></script>
+
+  <!-- Vue.js 2, vue-router 3 -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="https://unpkg.com/vue-router@3.5.3/dist/vue-router.js"></script>
+
+  <!-- 그 외 스크립트 -->
+  <script src="./src/utilities/serviceEnum.js"></script>
+  <script src="./src/utilities/firebaseToolkit.js"></script>
+
+  <!-- 라우터와 루트 외의 컴포넌트(components) -->
+  <script src="./src/components/common/AppHeader.js"></script>
+  <script src="./src/components/common/AppFooter.js"></script>
+  <script src="./src/components/common/LoadingOverlay.js"></script>
+  <script src="./src/components/HorizontalList.js"></script>
+  <script src="./src/components/SquareItem.js"></script>
+  <script src="./src/components/RowItem.js"></script>
+  <script src="./src/components/ArticleWriter.js"></script>
+  <script src="./src/components/ArticleViewer.js"></script>
+  <script src="./src/components/EmailSettingWriter.js"></script>
+  <script src="./src/components/ArticleRewriter.js"></script>
+  <script src="./src/components/DeleteConfirmModal.js"></script>
+
+  <!-- 라우터에 의해 전환되는 페이지(routes) -->
+  <script src="./src/routes/Main.js"></script>
+  <script src="./src/routes/Habit.js"></script>
+  <script src="./src/routes/Challenge.js"></script>
+  <script src="./src/routes/Learn.js"></script>
+  <script src="./src/routes/Auth.js"></script>
+  <script src="./src/routes/Mypage.js"></script>
+
+  <!-- Vue Root 컴포넌트 -->
+  <script src="./src/main.js"></script>
+</html>

@@ -1,0 +1,19 @@
+@import url("./routes/Auth.css");
+@import url("./routes/Main.css");
+@import url("./routes/Habit.css");
+@import url("./routes/Challenge.css");
+@import url("./routes/Learn.css");
+@import url("./routes/Mypage.css");
+
+.route {
+  margin-top: calc(72px + 32px); /* 72px : header height */
+  margin-bottom: 32px;
+  margin-left: 32px;
+  margin-right: 32px;
+
+  min-height: calc(100vh - 148px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

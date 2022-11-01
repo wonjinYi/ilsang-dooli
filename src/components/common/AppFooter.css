@@ -1,0 +1,32 @@
+#app-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 50vh;
+  padding-top: 32px;
+  background-color: rgb(107, 190, 114);
+  color: rgb(63, 115, 66);
+  /* text-align: center; */
+  background-image: url();
+}
+
+#app-footer .footer-group {
+  padding: 16px 32px;
+}
+
+#app-footer .footer-title {
+  font-weight: bolder;
+  margin-bottom: 8px;
+}
+
+#app-footer a:hover {
+  color: white;
+}
+
+#app-footer #footer-logo {
+  text-align: center;
+  padding-top: 64px;
+  font-size: 48px;
+  font-family: "Gowun Batang", "Noto Sans KR";
+  color: white;
+}

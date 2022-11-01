@@ -1,0 +1,103 @@
+#email-setting-writer {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 9998;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#email-setting-writer #form-container {
+  padding: 32px;
+  min-width: 50vw;
+  max-width: 90vw;
+  max-height: 95vh;
+
+  background-color: white;
+  border-radius: 8px;
+
+  overflow-y: auto;
+}
+
+#email-setting-writer #close-btn {
+  text-align: right;
+
+  margin-bottom: 16px;
+}
+
+#email-setting-writer #close-btn img {
+  border-radius: 8px;
+  padding: 4px;
+  width: 48px;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+#email-setting-writer #close-btn img:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* 공통 부분 */
+#email-setting-writer .input-set {
+  margin: 16px;
+}
+
+#email-setting-writer .input-title {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+/* 각 입력필드 */
+#email-setting-writer select {
+  width: 256px;
+  font-size: 16px;
+  text-align: center;
+}
+
+#email-setting-writer select {
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 8px;
+  padding: 4px;
+  transition: 0.3s background-color ease;
+  cursor: pointer;
+}
+
+#email-setting-writer select:focus {
+  background-color: rgba(248, 248, 248);
+}
+
+#email-setting-writer input[type="text"] {
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 8px;
+  padding: 4px;
+  transition: 0.3s background-color ease;
+}
+
+#email-setting-writer input[type="checkbox"] {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+#email-setting-writer button {
+  font-size: 16px;
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 8px;
+  padding: 4px;
+  transition: 0.3s background-color ease;
+  width: 100%;
+  cursor: pointer;
+}
+#email-setting-writer button:hover {
+  background-color: rgb(107, 190, 114);
+  color: white;
+}

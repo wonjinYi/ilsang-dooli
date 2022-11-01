@@ -1,0 +1,45 @@
+#route-mypage {
+  justify-content: flex-start;
+}
+
+#route-mypage strong {
+  font-weight: bolder;
+}
+
+#route-mypage #route-title {
+  font-size: 64px;
+  font-family: "Gowun Batang", "Noto Sans KR";
+}
+
+#route-mypage .group-container {
+  margin-top: 32px;
+}
+
+#route-mypage .group-title {
+  font-size: 32px;
+  font-family: "Gowun Batang", "Noto Sans KR";
+}
+
+/* button */
+#route-mypage button {
+  display: block;
+
+  margin-top: 8px;
+  padding: 8px;
+
+  width: 256px;
+  max-width: 90vw;
+
+  font-size: 16px;
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+
+  transition: 0.3s background-color, color ease;
+}
+
+#route-mypage button:hover {
+  background-color: rgb(107, 190, 114);
+  color: white;
+}

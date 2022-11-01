@@ -1,0 +1,102 @@
+#article-rewriter {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 9998;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#article-rewriter #form-container {
+  padding: 32px;
+  min-width: 50vw;
+  max-width: 90vw;
+  max-height: 95vh;
+
+  background-color: white;
+  border-radius: 8px;
+
+  overflow-y: auto;
+}
+
+#article-rewriter #close-btn {
+  text-align: right;
+
+  margin-bottom: 16px;
+}
+
+#article-rewriter #close-btn img {
+  border-radius: 8px;
+  padding: 4px;
+  width: 48px;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+#article-rewriter #close-btn img:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* 공통 부분 */
+#article-rewriter .input-set {
+  margin: 16px;
+}
+
+#article-rewriter .input-title {
+  margin-bottom: 4px;
+}
+
+/* 각 입력필드 */
+
+#article-rewriter form input[type="text"] {
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 8px;
+  padding: 4px;
+  transition: 0.3s background-color ease;
+}
+
+#article-rewriter form input[type="text"]:focus {
+  outline: none;
+  background-color: rgba(248, 248, 248);
+}
+
+#article-rewriter form textarea {
+  width: 100%;
+  min-height: 200px;
+  font-size: 16px;
+
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 8px;
+  padding: 4px;
+  transition: 0.3s background-color ease;
+  resize: none;
+}
+
+#article-rewriter form textarea:focus {
+  outline: none;
+  background-color: rgba(248, 248, 248);
+}
+
+#article-rewriter button {
+  font-size: 16px;
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 8px;
+  padding: 4px;
+  transition: 0.3s background-color ease;
+  width: 100%;
+  cursor: pointer;
+}
+#article-rewriter button:hover {
+  background-color: rgb(107, 190, 114);
+  color: white;
+}
