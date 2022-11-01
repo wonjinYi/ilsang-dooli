@@ -93,7 +93,7 @@ let ArticleWriter = {
           this.$emit("start-loading");
 
           let imgPath = null;
-          const imgdownloadUrl = null;
+          let imgdownloadUrl = null;
 
           if (this.imgfile) {
             const storageRes = await firebaseFuncs.sendImageToStorage(this.imgfile);
