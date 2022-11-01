@@ -10,7 +10,7 @@
 ### 링크
 
 - 📢 [KBSC 2022](https://www.kbsccoding.com/board/board.php?bo_table=notice&wr_id=69)
-- 💡 개발 계획서 [구글 프리젠테이션](https://docs.google.com/presentation/d/1pShgClLy7AHpHPruYaAMaTbGgQ6BBt8v5paFADXBaeU/edit?usp=sharing) | [PDF파일](https://github.com/wonjinYi/ilsang-dooli/blob/main/%5B%EC%9D%BC%EC%83%81%EB%91%90%EB%A6%AC%5D%EA%B0%9C%EB%B0%9C%20%EA%B3%84%ED%9A%8D%EC%84%9C.pdf)
+- 💡 개발 계획서 [구글 프리젠테이션](https://docs.google.com/presentation/d/1pShgClLy7AHpHPruYaAMaTbGgQ6BBt8v5paFADXBaeU/edit?usp=sharing) | [PDF파일](https://github.com/wonjinYi/ilsang-dooli/blob/main/%ea%b0%9c%eb%b0%9c%ea%b3%84%ed%9a%8d%ec%84%9c.pdf)
 
 ### 기능
 
